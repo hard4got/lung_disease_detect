@@ -41,7 +41,7 @@ def load_lottieurl(url):
 
 st.set_page_config(
     page_title="Lung-Detect",
-    page_icon="/Users/wangjihua/PycharmProjects/pythonProject6/static/lung.svg",
+    page_icon="../static/lung.svg",
     layout="wide",
 )
 
@@ -59,7 +59,7 @@ def main():
         dr = st.button("Analyze voice")
 
     if dr:
-        model_path = '/Users/wangjihua/PycharmProjects/pythonProject6/saved_model/my_model'
+        model_path = '../saved_model/my_model'
         new_model = tf.keras.models.load_model(model_path)
 
         # preprocessing sound
